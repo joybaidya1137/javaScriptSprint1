@@ -83,6 +83,8 @@ console.log("Is Fruits an Array?:", Array.isArray(fruits)); // Checking if it's 
 console.log("\n");
 
 
+
+
 // Object example
 const person = {
     name: "John",
@@ -92,17 +94,40 @@ const person = {
     address: { // Nested object as a property   
         street: "123 Main St",
         city: "Anytown",
-        country: "USA"
+        country: "USA",
+        number: 1234567890
     }
 };
+
+
 console.log("Person Object:", person);
 console.log("Name:", person.name); // Accessing property using dot notation
 console.log("Age:", person["age"]); // Accessing property using bracket notation
-console.log("Hobbies:", person.hobbies);
+console.log("Is Student:", person.isStudent); // Accessing boolean property
+console.log("Address:", person.address); // Accessing nested object property
+console.log("Hobbies:", person.hobbies); // Accessing array property
+
+console.log("Type of Person Object:", typeof person); // Type of the object
+console.log("Type of Address Object:", typeof person.address); // Type of the nested object
+console.log("Type of Hobbies Array:", typeof person.hobbies); // Type of the array
+console.log("type of address number:", typeof person.address.number); // Type of the number property 
+console.log("Is Person an Object?:", person instanceof Object); // Checking if it's an object
+
+
+console.log("\n");
+
+console.log("Hobbies:", person.hobbies);// Accessing array property
+console.log("Number of Hobbies:", person.hobbies.length); // Length of the hobbies array
 console.log("First Hobby:", person.hobbies[0]); // Accessing first hobby
 console.log("Second Hobby:", person.hobbies[1]); // Accessing second hobby
+console.log("Third Hobby:", person.hobbies[2]); // Accessing third hobby
+console.log(typeof person.hobbies); // Type of the hobbies property
+
+console.log("\n");
+
 console.log("City:", person.address.city); // Accessing nested object property
-console.log("Type of Person Object:", typeof person); // Type of the object
+console.log("Type Object:", typeof person.address.number); // Type of the object
+
 
 person.age = 26; // Modifying a property
 console.log("Updated Age:", person.age); // Updated age after modification
