@@ -107,13 +107,16 @@ if (true){
 const readline = require('readline');
 
 const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
+  input: process.stdin, // stdin is a standard input stream. input: process.stdin means the input will be taken from the standard input stream (usually the keyboard).
+  output: process.stdout // stdout is a standard output stream. output: process.stdout means the output will be written to the standard output stream (usually the console).
 });
 
-rl.question('Enter your name: ', (name) => {
+
+// rl.question is a method that takes two arguments: a question (string) and a callback function. The callback function is called with the user's input as its argument.
+// The rl.question method displays the question to the user and waits for the user to input a response. Once the user inputs a response and presses Enter, the callback function is executed with the user's input.
+rl.question('Enter your name: ', (name) => { 
   rl.question('Enter your age: ', (age) => {
-    const userAge = parseInt(age);
+    const userAge = parseInt(age); // Convert age to a number
 
     rl.question('Enter your city: ', (city) => {
 
@@ -225,7 +228,7 @@ console.log(globalLet); // it will work because globalLet is accessible everywhe
 
 
 
-// const var type variable........................//
+// ......................const var type variable........................//
 const nameconst = "Prince Joy";
 console.log("variable nameconst dasplay:",nameconst);
 //nameconst = " Joy Baidya"; // not allowed reassign value this const type variable
@@ -257,3 +260,11 @@ console.log("type of booleanconst:",typeof booleanconst); // it will show the ty
 
 const doubleconst = 10.5;
 console .log("variable doubleconst dasplay:",doubleconst);
+
+
+
+
+
+
+
+
