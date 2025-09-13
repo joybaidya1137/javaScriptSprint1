@@ -156,6 +156,70 @@ console.log(cube(0));   // Output: 0
 
 
 
+// Another example2:
+const greet = (name) => `Hello, ${name}!`;
+
+// Test with different arguments
+console.log(greet("Alice"));    // Output: "Hello, Alice!"
+console.log(greet("Bob"));      // Output: "Hello, Bob!"
+console.log(greet(""));         // Output: "Hello, !"
+console.log(greet(123));        // Output: "Hello, 123!"
+
+// Another example:
+const getLength = (str) => str.length;
+
+// Test with different arguments
+console.log(getLength("hello"));  // Output: 5 (number)
+console.log(getLength(""));       // Output: 0 (number)
+console.log(getLength("js"));     // Output: 2 (number)
+
+
+
+// Another example returning boolean:
+const isAdult = (age) => age >= 18;
+
+// Test with different arguments
+console.log(isAdult(20));    // Output: true (boolean)
+console.log(isAdult(16));    // Output: false (boolean)
+console.log(isAdult(18));    // Output: true (boolean)
+
+
+
+// Another example returning Object :
+const createPerson = (name, age) => ({ name, age });
+
+// Test with different arguments
+console.log(createPerson("Alice", 25)); // Output: { name: "Alice", age: 25 } (object)
+console.log(createPerson("Bob", 17));   // Output: { name: "Bob", age: 17 } (object)
+console.log(createPerson("", 0));       // Output: { name: "", age: 0 } (object)
+
+
+// Another example Returning an Array (a Type of Object) :
+const getEvens = (numbers) => numbers.filter(num => num % 2 === 0);
+
+// Test with different arguments
+console.log(getEvens([1, 2, 3, 4])); // Output: [2, 4] (array)
+console.log(getEvens([1, 3, 5]));     // Output: [] (array)
+console.log(getEvens([2, 4, 6]));     // Output: [2, 4, 6] (array)
+
+
+
+// Another example Returning a Function
+
+const createMultiplier = (factor) => (num) => num * factor;
+
+// Test with different arguments
+const double = createMultiplier(2);
+console.log(double(5));  // Output: 10 (number)
+console.log(double(3));  // Output: 6 (number)
+
+const triple = createMultiplier(3);
+console.log(triple(5));  // Output: 15 (number)
+
+
+
+
+
 
 /*
 2.Block Body (Explicit Return):
@@ -171,3 +235,14 @@ Example 2: Check if a Number is Even
 console.log(isEven(4));   // Output: true
 console.log(isEven(7));   // Output: false
 console.log(isEven(-2));  // Output: true
+
+// Another example:
+
+const circleArea = (radius) => {
+    return Math.PI * radius ** 2;
+};
+
+// Test
+console.log(circleArea(5).toFixed(2));   // "78.54"
+console.log(circleArea(0).toFixed(2));   // "0.00"
+console.log(circleArea(2.5).toFixed(2));// "19.63"
