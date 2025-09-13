@@ -145,6 +145,23 @@ person.name = "Joy baidya"; // Modifying the name property
 console.log("After Modifying Name Property:", person); // Updated object after modifying name property
 
 
+console("\n")
+
+console.log("= , == , === , != , !== , > , < , >= , <= operators examples ")
+
+// = , == , === , != , !== , > , < , >= , <= operators examples
+// == and === difference example
+const a = 5; // Number
+const b = "5"; // String
+console.log("a == b:", a == b); // true because values are equal after type coercion
+console.log("a === b:", a === b); // false because types are different
+console.log("a != b:", a != b); // false because values are equal after type coercion
+console.log("a !== b:", a !== b); // true because types are different
+
+console.log("b > 3:", b > 3); // true, because "6" is converted to number 5
+
+
+
 
 
 
