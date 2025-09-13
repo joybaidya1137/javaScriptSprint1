@@ -30,7 +30,7 @@ The provided code demonstrates several ways to define and use functions, includi
 
 
 Syntax:
- javascriptfunction functionName(parameters) {
+function functionName(parameters) {
    // Code block
    return value;
    }
@@ -55,7 +55,7 @@ console.log(square(0));  // Output: 0
          2.It’s not hoisted, so you must define it before calling it. 
          3.It can be named or anonymous.
 Syntax:
-javascriptconst functionName = function(parameters) {
+const functionName = function(parameters) {
   // Code block
   return value;
 };
