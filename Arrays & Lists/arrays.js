@@ -1,59 +1,8 @@
 // JavaScript arrays can hold elements of different data types in the same array.
 
 
-/* 
- 1.Array → [] .................................................................array.......................................
-       let numbers = [10, 20, 30, 40, 50];
-       console.log("Original array:", numbers);
-
-       const mixedArray = [
-    10,                      // Number
-    "Hello World",           // String
-    true,                    // Boolean
-    null,                    // Null value
-    undefined,               // Undefined value
-    { name: "John", age: 30 }, // Object
-    [1, 2, 3],               // Another array
-    function() { console.log("Function inside array"); }   // Function
-];
-
-   // To see the full array in the console
-   console.log(mixedArray);
-
-   // Accessing an element by its index
-console.log(mixedArray[1]); // Outputs: "Hello World"
-
-// Accessing an element from the nested object
-console.log(mixedArray[5].name); // Outputs: "John"
-
-// Executing the function from the array
-mixedArray[7](); // Outputs: "Function inside array"
- 
-    
-2.Object → { key: value }  .........................................................................Object,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-// Object example:
-         const person =  {
-             name: "John",
-             age: 25,
-             isStudent: false,
-             hobbies: ["Reading", "Traveling", "Swimming"],  // Array as a property
-             address: {    // Nested object as a property   
-                 street: "123 Main St",
-                 city: "Anytown",
-                 country: "USA",
-                 number: 1234567890
-               }
-             };
-
-
-console.log("Person Object:", person);
-console.log("Name:", person.name); // Accessing property using dot notation
-console.log("Age:", person["age"]); // Accessing property using bracket notation
-console.log("Is Student:", person.isStudent); // Accessing boolean property
-console.log("Address:", person.address); // Accessing nested object property
-console.log("Hobbies:", person.hobbies); // Accessing array property
-
-*/
+// In JavaScript, an array is a special variable, which can hold more than one value at a time.
+// It's an ordered collection of elements, where each element is identified by an index (a number, starting from 0).
 
 
 
