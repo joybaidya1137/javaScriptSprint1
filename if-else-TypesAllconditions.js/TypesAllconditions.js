@@ -49,9 +49,9 @@ let attendance = 80;
 
 // Pass condition: marks >= 40 OR attendance >= 75
 if (marks >= 40 || attendance >= 75) {
-    console.log("✅ Passed");
+    console.log("Passed");
 } else {
-    console.log("❌ Failed");
+    console.log("Failed");
 }
 
 
@@ -78,8 +78,8 @@ let username = "joy";
 let password = "1234";
 
 let loginStatus = (username === "joy" && password === "1234") // ture contuion then 
-    ? "✅ Login Successful" // true: then login successful print korbe
-    : "❌ Login Failed"; 
+    ? "Login Successful" // true: then login successful print korbe
+    : "Login Failed"; 
 
 console.log(loginStatus);
 

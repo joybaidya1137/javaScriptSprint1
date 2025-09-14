@@ -120,7 +120,7 @@ Arrow functions have two main forms:
 
 1.Single Expression (Implicit Return):  
 
-        javascriptconst functionName = (parameters) => expression;
+        const functionName = (parameters) => expression;
 
           If the function body is a single expression, it automatically returns 
           the result without needing the return keyword or curly braces.
@@ -128,7 +128,7 @@ Arrow functions have two main forms:
 
 2.Block Body (Explicit Return):
 
-        javascriptconst functionName = (parameters) => {
+        const functionName = (parameters) => {
            // Code block
             return value;
         };
