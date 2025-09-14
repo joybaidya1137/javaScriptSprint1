@@ -138,7 +138,7 @@ function doWhileLoopExample() {
     } while (i < fruits.length);
 }
 
-// Execute all examples
+// Execute all examples 
 
 
 forLoopExample();

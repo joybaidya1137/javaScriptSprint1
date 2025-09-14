@@ -60,10 +60,11 @@ mixedArray[7]();            // Function inside array
 
 
 
-
 // ------------------------------------------------------------------ Array of a single data type -------------------------------------------------
-let numbers = [10, 20, 30, 40, 50];
+let numbers = [10, 20, 30, "hello", false];
 console.log("Original array:", numbers);
+
+console.log( "this array lengths is:",numbers.length);
 
 // --- Add (push, unshift) ---
 // Add an element to the end
