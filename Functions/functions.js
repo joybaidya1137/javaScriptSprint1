@@ -1,3 +1,5 @@
+
+
 /* In JavaScript, a function is a reusable block of code designed to perform a specific task.
  Functions are executed when they are "called" or "invoked".
  They are a fundamental concept, allowing for code organization, reusability, and modularity.
@@ -15,7 +17,7 @@ The provided code demonstrates several ways to define and use functions, includi
 
 
 /*
-1. Function Declaration:.......................................................................1. Function Declaration:...................
+1. Function Declaration:...................................................................1. Function Declaration:...................
        1.A function declaration defines a named function using the function keyword.
        2.It’s hoisted, meaning you can call it before it’s defined in the code.maean: 
 
@@ -50,7 +52,7 @@ console.log(square(0));  // Output: 0
 
 
 /*
-2. Function Expression:..................................................................................2. Function Expression......
+2. Function Expression:....................................................................2. Function Expression......
          1.A function expression assigns a function to a variable. 
          2.It’s not hoisted, so you must define it before calling it. 
          3.It can be named or anonymous.
@@ -246,3 +248,99 @@ const circleArea = (radius) => {
 console.log(circleArea(5).toFixed(2));   // "78.54"
 console.log(circleArea(0).toFixed(2));   // "0.00"
 console.log(circleArea(2.5).toFixed(2));// "19.63"
+
+
+/*
+............................................................. Self-Invoking Functions...................................
+
+4. Self-Invoking Functions (Immediately Invoked Function Expressions - IIFE)
+  - A self-invoking function runs automatically as soon as it is defined.
+  - Useful for creating a local scope and avoiding polluting the global namespace.
+
+Syntax:
+(function() {
+  // Code block
+})();
+
+Or with arrow function:
+(() => {
+  // Code block
+})();
+
+*/
+
+// Example: IIFE that prints a message
+(function() {
+  console.log("Hello from a self-invoking function!");
+})();
+
+// Example: IIFE with parameters
+(function(name) {
+  console.log(`Hello, ${name}!`);
+})("Self-Invoked");
+
+// Example: IIFE that returns a value
+const result = (function(num) {
+  return num * num;
+})(6);
+
+console.log(result); // Output: 36
+
+// Example: Arrow function IIFE
+const sum = ((a, b) => a + b)(4, 5);
+console.log(sum); // Output: 9
+
+
+/*
+5. The 'this' Keyword in Functions
+-----------------------------------
+In JavaScript, 'this' refers to the object that is executing the current function.
+Its value depends on how the function is called.
+
+Example 1: 'this' in a method (object function)
+*/
+const person = {
+  name: "Alice",
+  greet: function() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+};
+person.greet(); // Output: Hello, my name is Alice
+
+/*
+Example 2: 'this' in a regular function (not attached to an object)
+*/
+function showThis() {
+  console.log(this);
+}
+showThis(); // In non-strict mode, 'this' refers to the global object (window in browsers)
+
+/*
+Example 3: 'this' in arrow functions
+Arrow functions do NOT have their own 'this'; they inherit 'this' from their surrounding scope.
+*/
+const obj = {
+  value: 42,
+  show: () => {
+    console.log(this.value);
+  }
+};
+obj.show(); // Output: undefined (arrow function does not bind its own 'this')
+
+/*
+Example 4: 'this' in event handlers (browser only)
+*/
+// document.getElementById("myBtn").onclick = function() {
+//   console.log(this); // 'this' refers to the button element
+// };
+
+/*
+Summary:
+- In object methods, 'this' refers to the object.
+- In regular functions, 'this' refers to the global object (or undefined in strict mode).
+- In arrow functions, 'this' is inherited from the parent scope.
+*/
+
+
+
+
