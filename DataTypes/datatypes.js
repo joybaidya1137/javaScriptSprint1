@@ -159,14 +159,3 @@ console.log("a != b:", a != b); // false because values are equal after type coe
 console.log("a !== b:", a !== b); // true because types are different
 
 console.log("b > 3:", b > 3); // true, because "6" is converted to number 5
-
-
-
-
-
-
-
-
-
-
-
